@@ -11,9 +11,9 @@ jobs:
         run: pwd
       - name: fetch specs
         run: |
-        lscpu
-        free -h
-        df -h
+          lscpu
+          free -h
+          df -h
       - name: Create JS file
         run: echo "console.log('Hello, World!');" > hello.js
       - name: Run JS file
