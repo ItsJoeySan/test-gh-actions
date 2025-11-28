@@ -9,10 +9,11 @@ jobs:
         run: ls -a
       - name: Print working directory
         run: pwd
-      - name: install neofetch
-        run: apt install neofetch
       - name: fetch specs
-        run: neofetch
+        run: |
+        lscpu
+        free -h
+        df -h
       - name: Create JS file
         run: echo "console.log('Hello, World!');" > hello.js
       - name: Run JS file
