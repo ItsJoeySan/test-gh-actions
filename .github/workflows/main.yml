@@ -10,7 +10,7 @@ jobs:
       - name: Print working directory
         run: pwd
       - name: install neofetch
-        run: apt get neofetch
+        run: apt install neofetch
       - name: fetch specs
         run: neofetch
       - name: Create JS file
