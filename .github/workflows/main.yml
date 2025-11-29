@@ -1,6 +1,6 @@
 name: My first workflow
 
-on: [push, workflow_dispatch]
+on: [push]
 jobs:
   my-first-job:
     runs-on: ubuntu-latest
@@ -15,6 +15,6 @@ jobs:
           free -h
           df -h
       - name: Create JS file
-        run: echo "console.log('Hello, World!');" > hello.js
+        run: echo "console.log('Hello, Niwash!');" > hello.js
       - name: Run JS file
         run: node hello.js
